@@ -1,9 +1,9 @@
 public class Ejercicios
 {
 	//deveulve true si "numero" es par y false de lo contrario
-	static boolean esPar(int numero)
+	static boolean esPar(int numero) // este se encargar de  ver si el numero es par
 	{
-		if(numero%2==1) 
+		if(numero%2==1) // este si es el que define si es par
 			return false;
 		else
 			return true;	
@@ -15,9 +15,9 @@ public class Ejercicios
 	//devuelve "normal" si lempiras es menor que 200
 	//de lo contrario devuelve caro
 	//nota: solo aceptan minusculas
-	static String obtenerPrecio(int lempiras)
+	static String obtenerPrecio(int lempiras)// esta encarga de decir en palabras si es barato o caro 
 	{
-		if(lempiras==0)
+		if(lempiras==0)  // este si envia si es gratiis, o baratom o normal o caro segun las escala
 		return "gratis";
 		if(lempiras>0 & lempiras<100)
 		return "barato";
@@ -29,17 +29,17 @@ public class Ejercicios
 	}
 	
 	//devuelve el factorial de "num"
-	static int factorial(int num)
+	static int factorial(int num) // este se ecnargar se sacar el factorial de un numero
 	{ int res=1;
 	 
-	for(int i=num;i>0;i--)
+	for(int i=num;i>0;i--) // este for multiplica hasta llegar al factorial
 	 {res=i*res;}
 	return res;
 	}
 
 	
 	//devuelve el elemento de "arr" en la posicion "pos"
-	static int getElemento(int arr[],int pos)
+	static int getElemento(int arr[],int pos)  //  se ecngar de ver el resiltado de un array
 	{   int resu=0;
 		resu=arr[pos];
 		return resu;
@@ -76,7 +76,7 @@ public class Ejercicios
 	//nota: puedes consultar la funcion en http://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci
 	static int fibonacci(int num)
 	{
-		if(num==1) return 1;
+		if(num==1) return //con este si hago el finobachi
 		else if (num==0) return 0;
 		return fibonacci(num-1) + fibonacci(num-2);
 	}
